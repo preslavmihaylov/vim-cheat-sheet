@@ -1,6 +1,12 @@
 # VIM Cheat Sheet
 A cheat sheet I have produced while learning how to use the almighty editor
 
+## Modes
+
+Esc - Normal Mode (default)
+i - Insert Mode
+(modifier)v - Visual mode
+
 ## Navigation
 
 h - left
