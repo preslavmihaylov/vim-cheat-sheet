@@ -30,13 +30,19 @@ e - go to end of next word
   
 i - insert before current Char  
 I - insert before current line  
+
 a - append after current letter  
-  
 A - append at the end of current line  
+
 o - insert starting at a new line after the current one  
+O - insert starting a new line before current one  
   
 r - replace current char with another  
-  
+
+cc - delete current line and enter insert mode  
+cw - delete current word and enter insert mode  
+c$ - delete until end of line and enter insert mode  
+
 ## Deleting text  
   
 x - delete current char  
