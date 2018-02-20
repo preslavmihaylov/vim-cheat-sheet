@@ -91,6 +91,13 @@ possible {options}:
 g - match multiple times on a single line  
 c - ask before replacing  
 
+## Performing external commands
+
+:!{external command} - executes command and returns to vim after execution  
+:r!{external command} - read the result of external command and put it under cursor  
+:{num1},{num2}! {command} - replace the contents of the file between line {num1} and {num2} with result of external command.
+                            Feed as input the contents between those lines.  
+
 ## Performing a command n times  
   
 Every command can be performed several times by supplying it with a number  
