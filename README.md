@@ -95,8 +95,17 @@ c - ask before replacing
 
 :!{external command} - executes command and returns to vim after execution  
 :r!{external command} - read the result of external command and put it under cursor  
-:{num1},{num2}! {command} - replace the contents of the file between line {num1} and {num2} with result of external command.
+:{num1},{num2}! {command} - replace the contents of the file between line {num1} and {num2} with result of external command.  
                             Feed as input the contents between those lines.  
+
+## Saving/exiting files
+
+:q - quit without saving  
+:w - save without exiting  
+:x - save and exit  
+:saveas {file} - save changes to {file}  
+
+ZZ - save and exit  
 
 ## Performing a command n times  
   
