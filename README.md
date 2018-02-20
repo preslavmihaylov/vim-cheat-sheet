@@ -66,8 +66,8 @@ u - undo previously performed command
 
 ## Indenting
 
->> - indent line  
-<< - reindent line  
+\>\> - indent line  
+\<\< - reindent line  
 
 ## Searching
 
