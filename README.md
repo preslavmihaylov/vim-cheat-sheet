@@ -42,16 +42,55 @@ r - replace current char with another
 x - delete current char  
   
 dd - delete current line  
-dw - delete a word starting from cursor  
+dw - delete a word (from cursor)  
+diw - delete a word (from beginning of word)  
   
 d$ - delete everything until the end of line  
 d0 - delete everything until beginning of line  
+  
+## Copying text  
+  
+y - yank (copy)  
+yy - copy line  
+yw - copy word (from beginning of cursor)  
+yiw - copy word (from beginning of word)  
+y (during visual mode) - copy highlighted text  
+  
+p - paste the yanked buffer  
+  
   
 ## Undo/Redo  
   
 . (dot) - redo previously performed command  
 u - undo previously performed command  
-  
+
+## Indenting
+
+>> - indent line  
+<< - reindent line  
+
+## Searching
+
+/ - forward search  
+? - backward search  
+
+n - go to next found occurence  
+N - go to previously found occurence  
+
+## Search & Replace
+
+%s - sed through all file  
+{num},s - sed from {num} line forward  
+,{num}s - sed from beginning of file until {num}  
+{num1},{num2}s - sed from {num1} line to {num2} line  
+
+format: {range}s/{search-term}/{replace-term}/{options}  
+NOTE: {search-term} can be regex  
+
+possible {options}:  
+g - match multiple times on a single line  
+c - ask before replacing  
+
 ## Performing a command n times  
   
 Every command can be performed several times by supplying it with a number  
