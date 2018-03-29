@@ -47,6 +47,7 @@ c$ - delete until end of line and enter insert mode
 ## Deleting text  
   
 x - delete current char  
+X - delete previous char (backspace)  
   
 dd - delete current line  
 dw - delete a word (from cursor)  
